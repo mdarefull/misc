@@ -1,0 +1,49 @@
+Dado una secuencia de n urls en la forma:
+www.<nombreDelSitio>.domain[\...<extension>]
+que representa los sitios webs accedidos
+desde una terminal.
+
+Responder una serie de m queries de la forma:
+<DirecciónURL>
+<*sufijo>
+<prefijo*>
+<*subcadena*> (O una concatenación de esta)
+
+Que deberá responder cuantas veces se 
+ha accedido a la misma desde la terminal.
+
+Ejemplo:
+Entrada:
+5
+www.canalhabana.cu
+www.cubadebate.cu
+www.miBlogPreferido.com\RobertoSantana.html
+www.miBlogPreferido.com\RobertoSantana\M12012013.html
+www.cubadebate.cu\Noticias\Política\ReinoUnidoEnCrisis.php
+4
+www.cubadebate.cu
+*.cu
+www.*
+*Roberto*
+
+Salida:
+2
+3
+5
+2
+
+Hint:
+La primera consulta solicita la cantidad de 
+ocasiones en que se ha accedido al sitio web
+cubadebate
+	
+La segunda consulta solicita la cantidad de
+ocasiones en que se ha accedido a un sitio
+de dominio cubano.
+
+La tercera consulta solicita la cantidad
+de sitios de la World Wide Web accedidos.
+
+La última consulta solicita la cantidad de
+sitios que contienen la subcadena Roberto 
+accedidos.

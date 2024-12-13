@@ -1,0 +1,40 @@
+﻿@{
+    var removeModalId = ViewData.First(k => k.Key == "id").Value;
+    var removeHiddenInputId = "topicRemoveHiddenInputId";
+    var cancelButtonId = "topicRemoveCancelButton";
+}
+
+<div class="modal fade" id="@removeModalId" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-sm" role="document">
+        <div class="modal-content">
+            @using (Html.BeginForm("RemoveTopic", "Home"))
+            {
+                // If I use Html.Hidden it will try to look for the value at the ViewData and because
+                //  there is a topicId, it will override the value with its value.
+                <input type="hidden" value="-1" name="topicId" id="@removeHiddenInputId" />
+                <div class="modal-header">
+                    <h4 class="modal-title">Topic Removal Confirmation</h4>
+                </div>
+                <div class="modal-body">
+                    Are you sure to remove the topic?
+                    <div class="checkbox">
+                        <label>
+                            @Html.CheckBox("keepSubtopics", false)
+                            Keep the subtopics?
+                        </label>
+                    </div>
+                    <div class="checkbox">
+                        <label>
+                            @Html.CheckBox("keepReferences", false)
+                            Keep the references?
+                        </label>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-danger">Yes</button>
+                    <button id="@cancelButtonId" class="btn btn-default" data-dismiss="modal">No</button>
+                </div>
+            }
+        </div>
+    </div>
+</div>

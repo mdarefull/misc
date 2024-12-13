@@ -1,0 +1,40 @@
+BUGS DETECTADOS:
+2- Me gustaría ahorrar todo el espacio posible en los formularios.
+ a- El HitForm su distribución está hecha mierda!!!
+
+3- Los list boxs, cuando el texto es muy grande se cortan y no poseen scroll-bar (Interacciones)
+
+4- Como las interacciones son ítems, no tengo posibilidad de editarlos.
+
+5- La lista de palabras no se actualiza cuando creo una nueva palabra mediante: Buscar Palabra en Español
+
+6- La subcategoría y categorías deberían estar ordenadas.
+
+7 - En los Hit forms los significados, etc tampoco se ven si son muy grandes.
+
+8 - Me gustaría poder moficiar los verbos sin penalización y sin tener que hacerlo en la BD.
+
+9 - Arreglar bien los tab-index, al presionar tab en Búsqueda Interactiva, debiera saltar a Buscar Palabra en Español.
+Además, no ponerle tab index al vocabulario pues la búsqueda interactiva hace lo mismo pero mejor.
+
+10 - Cuando me equivoco y pongo ' la aplicación explota. Si no puedo resolver esto usando un QueryBuilder, entonces al menos sacar una excepción, pero no tener que cerrar y volver a comenzar.
+
+11- Me gustaría que al completar una operación en los list box (eliminar), se me seleccionara automáticamente el text box que le corresponde.
+
+12 - Escribir en un log las modificaciones a la BD.
+
+13 - Cuando agrego un ítem a interacciones no se actualiza el list box.
+
+14 - El pitico ese cada vez que inserto una palabra o algo me tiene loco (vocabulario)
+
+15 - Agregar un ToPDF para poder imprimir las palabras.
+
+16 - Cambiar los comobo box a drop box.
+
+17 - Que las palabras random sean a corde a la categoría que tenga seleccionada.
+
+18 - Al insertar en vocabulario no se inserta en orden.
+
+19 - Realizar la versión 3 centralizada para no tener que repetir código (un ejemplo es que la busqueda mejorada para el vocabulario tengo que reflejarla en las reglas y las interacciones)
+
+20 - No le veo sentido a las interacciones, voy a tener que mejorar su utilidad...

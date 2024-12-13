@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CommonStore.Application.Fakes</name>
+    </assembly>
+    <members>
+        <member name="T:CommonStore.Application.Wrappers.Fakes.StubModelMapperWrapper">
+            <summary>Stub type of CommonStore.Application.Wrappers.ModelMapperWrapper</summary>
+        </member>
+        <member name="M:CommonStore.Application.Wrappers.Fakes.StubModelMapperWrapper.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:CommonStore.Application.Wrappers.Fakes.StubModelMapperWrapper.InitializeStub">
+            <summary>Initializes a new instance of type StubModelMapperWrapper</summary>
+        </member>
+        <member name="M:CommonStore.Application.Wrappers.Fakes.StubModelMapperWrapper.Map``2(``0)">
+            <summary>Sets the stub of ModelMapperWrapper.Map(!!0 source)</summary>
+        </member>
+        <member name="M:CommonStore.Application.Wrappers.Fakes.StubModelMapperWrapper.MapOf2M0``2(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{``0,``1})">
+            <summary>Sets stubs of Map(!!0 source)</summary>
+        </member>
+        <member name="P:CommonStore.Application.Wrappers.Fakes.StubModelMapperWrapper.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:CommonStore.Application.Wrappers.Fakes.StubModelMapperWrapper.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:CommonStore.Application.Wrappers.Fakes.StubModelMapperWrapper.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,65 @@
+﻿@model AddTopicViewModel
+@{
+    ViewBag.Title = "Create New Subtopic";
+    ViewBag.Description = "Create a new subtopic by grouping references from its owner";
+
+    var bodyId = "addTopicBody";
+    var cancelBtnId = "addTopicCancelButton";
+}
+
+@section Bundles
+{
+    @Styles.Render(BundleRegistrar.CssAddTopicPath)
+    @Scripts.Render(BundleRegistrar.JsAddTopicPath)
+}
+
+@section Body
+{
+    <div class="container">
+        <div class="panel panel-success" id="@bodyId">
+            <div class="panel-heading">
+                <h1 class="panel-title">Group references into a new Topic!</h1>
+            </div>
+            <div class="panel-body">
+                <label>Select the References to group:</label>
+                <hr />
+                @foreach (var reference in Model.References)
+                {
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" data-referenceid="@reference.Id" />
+                            @reference.Name
+                        </label>
+                    </div>
+                }
+                <hr />
+                @using (Html.BeginForm())
+                {
+                    @Html.ValidationSummary()
+
+                    @Html.HiddenFor(m => m.OwnerId)
+
+                    <div class="form-group">
+                        @Html.LabelFor(m => m.Name)
+                        @Html.TextBoxFor(m => m.Name, new { @class = "form-control", placeholder = "Name..." })
+                    </div>
+                    <div class="form-group">
+                        @Html.LabelFor(m => m.Description)
+                        @Html.TextAreaFor(m => m.Description, new { @class = "form-control", placeholder = "Optional Description...", rows = 5 })
+                    </div>
+
+                    <div class="panel-footer">
+                        <div class="row">
+                            <div class="col-xs-6">
+                                <button class="btn btn-success btn-block" type="submit">Accept</button>
+                            </div>
+                            <div class="col-xs-6">
+                                <a id="@cancelBtnId" role="button" class="btn btn-default btn-block" href="@Url.Action("Topic", new { topicid=Model.OwnerId })">Cancel</a>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+}

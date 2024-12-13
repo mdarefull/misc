@@ -1,0 +1,29 @@
+﻿@{
+    var removeModalId = ViewData.First(k => k.Key == "id").Value;
+    var removeHiddenInputId = "refRemoveHiddenInputId";
+    var cancelButtonId = "refRemoveCancelButton";
+}
+
+<div class="modal fade" id="@removeModalId" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-sm" role="document">
+        <div class="modal-content">
+            @using (Html.BeginForm("RemoveReference", "Home"))
+            {
+                // If I use Html.Hidden it will try to look for the value at the ViewData and because
+                //  this information is not related to the ViewData, I opted to isolate it just because
+                <input type="hidden" value=-1 name="referenceId" id="@removeHiddenInputId" />
+                <input type="hidden" value="@Request.Url.PathAndQuery" name="returnUrl" />
+                <div class="modal-header">
+                    <h4 class="modal-title">Reference Removal Confirmation</h4>
+                </div>
+                <div class="modal-body">
+                    Are you sure to remove the reference?
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-danger">Yes</button>
+                    <button id="@cancelButtonId" class="btn btn-default" data-dismiss="modal">No</button>
+                </div>
+            }
+        </div>
+    </div>
+</div>

@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>KnowledgeMap.Business.Services.Fakes</name>
+    </assembly>
+    <members>
+        <member name="T:KnowledgeMap.Business.Services.Fakes.StubHomeServices">
+            <summary>Stub type of KnowledgeMap.Business.Services.HomeServices</summary>
+        </member>
+        <member name="M:KnowledgeMap.Business.Services.Fakes.StubHomeServices.#ctor(CommonStore.Models.Pcl.IRepository{KnowledgeMap.Data.Models.Topic,System.Int64},CommonStore.Models.Pcl.IRepository{KnowledgeMap.Data.Models.Reference,System.Int64})">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:KnowledgeMap.Business.Services.Fakes.StubHomeServices.AddReference(System.Int64,KnowledgeMap.Data.Models.Reference)">
+            <summary>Sets the stub of HomeServices.AddReference(Int64 topicId, Reference newReference)</summary>
+        </member>
+        <member name="F:KnowledgeMap.Business.Services.Fakes.StubHomeServices.AddReferenceInt64Reference">
+            <summary>Sets the stub of HomeServices.AddReference(Int64 topicId, Reference newReference)</summary>
+        </member>
+        <member name="M:KnowledgeMap.Business.Services.Fakes.StubHomeServices.ChangeReferenceOwner(KnowledgeMap.Data.Models.Topic,KnowledgeMap.Data.Models.Topic,KnowledgeMap.Data.Models.Reference)">
+            <summary>Sets the stub of HomeServices.ChangeReferenceOwner(Topic currentOwner, Topic nextOwner, Reference reference)</summary>
+        </member>
+        <member name="M:KnowledgeMap.Business.Services.Fakes.StubHomeServices.ChangeReferenceOwner(System.Int64,System.Int64,System.Int64)">
+            <summary>Sets the stub of HomeServices.ChangeReferenceOwner(Int64 currentOwnerId, Int64 refId, Int64 nextOwnerId)</summary>
+        </member>
+        <member name="F:KnowledgeMap.Business.Services.Fakes.StubHomeServices.ChangeReferenceOwnerInt64Int64Int64">
+            <summary>Sets the stub of HomeServices.ChangeReferenceOwner(Int64 currentOwnerId, Int64 refId, Int64 nextOwnerId)</summary>
+        </member>
+        <member name="F:KnowledgeMap.Business.Services.Fakes.StubHomeServices.ChangeReferenceOwnerTopicTopicReference">
+            <summary>Sets the stub of HomeServices.ChangeReferenceOwner(Topic currentOwner, Topic nextOwner, Reference reference)</summary>
+        </member>
+        <member name="M:KnowledgeMap.Business.Services.Fakes.StubHomeServices.GetTopic(System.Int64)">
+            <summary>Sets the stub of HomeServices.GetTopic(Int64 id)</summary>
+        </member>
+        <member name="F:KnowledgeMap.Business.Services.Fakes.StubHomeServices.GetTopicInt64">
+            <summary>Sets the stub of HomeServices.GetTopic(Int64 id)</summary>
+        </member>
+        <member name="M:KnowledgeMap.Business.Services.Fakes.StubHomeServices.InitializeStub">
+            <summary>Initializes a new instance of type StubHomeServices</summary>
+        </member>
+        <member name="M:KnowledgeMap.Business.Services.Fakes.StubHomeServices.IsUniverseTopic(System.Int64)">
+            <summary>Sets the stub of HomeServices.IsUniverseTopic(Int64 id)</summary>
+        </member>
+        <member name="F:KnowledgeMap.Business.Services.Fakes.StubHomeServices.IsUniverseTopicInt64">
+            <summary>Sets the stub of HomeServices.IsUniverseTopic(Int64 id)</summary>
+        </member>
+        <member name="M:KnowledgeMap.Business.Services.Fakes.StubHomeServices.RemoveReference(System.Int64)">
+            <summary>Sets the stub of HomeServices.RemoveReference(Int64 id)</summary>
+        </member>
+        <member name="F:KnowledgeMap.Business.Services.Fakes.StubHomeServices.RemoveReferenceInt64">
+            <summary>Sets the stub of HomeServices.RemoveReference(Int64 id)</summary>
+        </member>
+        <member name="M:KnowledgeMap.Business.Services.Fakes.StubHomeServices.RemoveTopic(KnowledgeMap.Data.Models.Topic,System.Boolean,System.Boolean)">
+            <summary>Sets the stub of HomeServices.RemoveTopic(Topic topic, Boolean keepSubtopics, Boolean keepReferences)</summary>
+        </member>
+        <member name="M:KnowledgeMap.Business.Services.Fakes.StubHomeServices.RemoveTopic(System.Int64,System.Boolean,System.Boolean)">
+            <summary>Sets the stub of HomeServices.RemoveTopic(Int64 id, Boolean keepSubtopics, Boolean keepReferences)</summary>
+        </member>
+        <member name="F:KnowledgeMap.Business.Services.Fakes.StubHomeServices.RemoveTopicInt64BooleanBoolean">
+            <summary>Sets the stub of HomeServices.RemoveTopic(Int64 id, Boolean keepSubtopics, Boolean keepReferences)</summary>
+        </member>
+        <member name="F:KnowledgeMap.Business.Services.Fakes.StubHomeServices.RemoveTopicTopicBooleanBoolean">
+            <summary>Sets the stub of HomeServices.RemoveTopic(Topic topic, Boolean keepSubtopics, Boolean keepReferences)</summary>
+        </member>
+        <member name="P:KnowledgeMap.Business.Services.Fakes.StubHomeServices.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:KnowledgeMap.Business.Services.Fakes.StubHomeServices.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:KnowledgeMap.Business.Services.Fakes.StubHomeServices.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+    </members>
+</doc>

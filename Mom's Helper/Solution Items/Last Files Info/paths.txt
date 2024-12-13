@@ -1,0 +1,17 @@
+Path names:
+
+PHR 28 de abril 2014:
+	startBat = "C:\Program Files\Exact\ModuloNomina28deabril\start.bat"
+	stopBat = "C:\Program Files\Exact\ModuloNomina28deabril\stop.bat"
+	jdbc = "C:\Program Files\Exact\ModuloNomina28deabril\common\classes\jdbc.properties"
+
+PHR Client:
+	startBat = "C:\Program Files\Exact\ModuloNomina\start.bat"
+	stopBat = "C:\Program Files\Exact\ModuloNomina\stop.bat"
+	jdbc = "C:\Program Files\Exact\ModuloNomina\common\classes\jdbc.properties"
+
+PHR Desarrollo:
+	startBat = "C:\Program Files\Exact\ModuloNominaDesarrollo\start.bat"
+	stopBat = "C:\Program Files\Exact\ModuloNominaDesarrollo\stop.bat"
+	jdbc = "C:\Program Files\Exact\ModuloNominaDesarrollo\common\classes\jdbc.properties"
+	

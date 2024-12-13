@@ -1,0 +1,31 @@
+﻿@model List<CustomResourceViewModel>
+@{
+    ViewBag.Title = "Resources' List";
+    ViewBag.Description = "List of every uploaded custom resource.";
+}
+
+@section Body
+{
+    <div class="container">
+        <h1 class="h1">Resources' List</h1>
+        <div class="container">
+            @if (Model.Count > 0)
+            {
+                <div class="list-group">
+                    @foreach (var resource in Model)
+                    {
+                        <a href="@Url.Action("Get", new { resourceId = resource.Id })" class="list-group-item" target="_blank">
+                            <h4 class="list-group-item-heading">@resource.Name</h4>
+                        </a>
+                    }
+                </div>
+            }
+            else
+            {
+                <a href="@Url.Action("Upload")">
+                    <p class="alert alert-info">No resources uploaded yet... upload one now!!!</p>
+                </a>
+            }
+        </div>
+    </div>
+}

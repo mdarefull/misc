@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CommonStore.Models.Pcl.Fakes</name>
+    </assembly>
+    <members>
+        <member name="T:CommonStore.Models.Pcl.Fakes.StubIRepository`2">
+            <summary>Stub type of CommonStore.Models.Pcl.IRepository`2</summary>
+        </member>
+        <member name="M:CommonStore.Models.Pcl.Fakes.StubIRepository`2.#ctor">
+            <summary>Initializes a new instance of type StubIRepository</summary>
+        </member>
+        <member name="F:CommonStore.Models.Pcl.Fakes.StubIRepository`2.AddAtomicT0">
+            <summary>Sets the stub of IRepository`2.AddAtomic(!0 item)</summary>
+        </member>
+        <member name="F:CommonStore.Models.Pcl.Fakes.StubIRepository`2.AddT0">
+            <summary>Sets the stub of IRepository`2.Add(!0 item)</summary>
+        </member>
+        <member name="M:CommonStore.Models.Pcl.Fakes.StubIRepository`2.csmp::CommonStore#Models#Pcl#IRepository{T@TKey}#Add(`0)">
+            <summary>Sets the stub of IRepository`2.Add(!0 item)</summary>
+        </member>
+        <member name="M:CommonStore.Models.Pcl.Fakes.StubIRepository`2.csmp::CommonStore#Models#Pcl#IRepository{T@TKey}#AddAtomic(`0)">
+            <summary>Sets the stub of IRepository`2.AddAtomic(!0 item)</summary>
+        </member>
+        <member name="M:CommonStore.Models.Pcl.Fakes.StubIRepository`2.csmp::CommonStore#Models#Pcl#IRepository{T@TKey}#GetAll">
+            <summary>Sets the stub of IRepository`2.GetAll()</summary>
+        </member>
+        <member name="M:CommonStore.Models.Pcl.Fakes.StubIRepository`2.csmp::CommonStore#Models#Pcl#IRepository{T@TKey}#GetById(`1)">
+            <summary>Sets the stub of IRepository`2.GetById(!1 id)</summary>
+        </member>
+        <member name="M:CommonStore.Models.Pcl.Fakes.StubIRepository`2.csmp::CommonStore#Models#Pcl#IRepository{T@TKey}#Remove(`1)">
+            <summary>Sets the stub of IRepository`2.Remove(!1 id)</summary>
+        </member>
+        <member name="M:CommonStore.Models.Pcl.Fakes.StubIRepository`2.csmp::CommonStore#Models#Pcl#IRepository{T@TKey}#RemoveAtomic(`1)">
+            <summary>Sets the stub of IRepository`2.RemoveAtomic(!1 id)</summary>
+        </member>
+        <member name="M:CommonStore.Models.Pcl.Fakes.StubIRepository`2.csmp::CommonStore#Models#Pcl#IRepository{T@TKey}#SaveChanges">
+            <summary>Sets the stub of IRepository`2.SaveChanges()</summary>
+        </member>
+        <member name="M:CommonStore.Models.Pcl.Fakes.StubIRepository`2.csmp::CommonStore#Models#Pcl#IRepository{T@TKey}#Update(`0)">
+            <summary>Sets the stub of IRepository`2.Update(!0 item)</summary>
+        </member>
+        <member name="M:CommonStore.Models.Pcl.Fakes.StubIRepository`2.csmp::CommonStore#Models#Pcl#IRepository{T@TKey}#UpdateAtomic(`0)">
+            <summary>Sets the stub of IRepository`2.UpdateAtomic(!0 item)</summary>
+        </member>
+        <member name="F:CommonStore.Models.Pcl.Fakes.StubIRepository`2.GetAll">
+            <summary>Sets the stub of IRepository`2.GetAll()</summary>
+        </member>
+        <member name="F:CommonStore.Models.Pcl.Fakes.StubIRepository`2.GetByIdT1">
+            <summary>Sets the stub of IRepository`2.GetById(!1 id)</summary>
+        </member>
+        <member name="F:CommonStore.Models.Pcl.Fakes.StubIRepository`2.RemoveAtomicT1">
+            <summary>Sets the stub of IRepository`2.RemoveAtomic(!1 id)</summary>
+        </member>
+        <member name="F:CommonStore.Models.Pcl.Fakes.StubIRepository`2.RemoveT1">
+            <summary>Sets the stub of IRepository`2.Remove(!1 id)</summary>
+        </member>
+        <member name="F:CommonStore.Models.Pcl.Fakes.StubIRepository`2.SaveChanges">
+            <summary>Sets the stub of IRepository`2.SaveChanges()</summary>
+        </member>
+        <member name="F:CommonStore.Models.Pcl.Fakes.StubIRepository`2.UpdateAtomicT0">
+            <summary>Sets the stub of IRepository`2.UpdateAtomic(!0 item)</summary>
+        </member>
+        <member name="F:CommonStore.Models.Pcl.Fakes.StubIRepository`2.UpdateT0">
+            <summary>Sets the stub of IRepository`2.Update(!0 item)</summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,47 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PHR Helper_WF", "PHR Helper_WF\PHR Helper_WF.csproj", "{E7F90222-405D-4E74-AF82-4EA0B751E373}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionItems", "SolutionItems", "{B66B2D5F-AB7F-4727-A21C-96920DD5A1A6}"
+	ProjectSection(SolutionItems) = preProject
+		Solution Items\README.txt = Solution Items\README.txt
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OhterOptionsExtractor", "OhterOptionsExtractor\OhterOptionsExtractor.csproj", "{B57C5D06-5F12-47B9-9BE5-6A41E5E59D35}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Helpers", "Helpers", "{3C0E298C-34A0-46AC-B964-50690393434B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{C3402498-44EF-4185-89E6-5F6FD1E8AD8F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PHR Helper_WF.Tests", "PHR Helper_WF.Tests\PHR Helper_WF.Tests.csproj", "{29017A5A-DE3A-4C52-9735-419CEFDC5683}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E7F90222-405D-4E74-AF82-4EA0B751E373}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7F90222-405D-4E74-AF82-4EA0B751E373}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7F90222-405D-4E74-AF82-4EA0B751E373}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7F90222-405D-4E74-AF82-4EA0B751E373}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B57C5D06-5F12-47B9-9BE5-6A41E5E59D35}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B57C5D06-5F12-47B9-9BE5-6A41E5E59D35}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B57C5D06-5F12-47B9-9BE5-6A41E5E59D35}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B57C5D06-5F12-47B9-9BE5-6A41E5E59D35}.Release|Any CPU.Build.0 = Release|Any CPU
+		{29017A5A-DE3A-4C52-9735-419CEFDC5683}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29017A5A-DE3A-4C52-9735-419CEFDC5683}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29017A5A-DE3A-4C52-9735-419CEFDC5683}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29017A5A-DE3A-4C52-9735-419CEFDC5683}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B57C5D06-5F12-47B9-9BE5-6A41E5E59D35} = {3C0E298C-34A0-46AC-B964-50690393434B}
+		{29017A5A-DE3A-4C52-9735-419CEFDC5683} = {C3402498-44EF-4185-89E6-5F6FD1E8AD8F}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>KnowledgeMap.Business.Abstracts.Fakes</name>
+    </assembly>
+    <members>
+        <member name="T:KnowledgeMap.Business.Abstracts.Fakes.StubIHomeServices">
+            <summary>Stub type of KnowledgeMap.Business.Abstracts.IHomeServices</summary>
+        </member>
+        <member name="M:KnowledgeMap.Business.Abstracts.Fakes.StubIHomeServices.#ctor">
+            <summary>Initializes a new instance of type StubIHomeServices</summary>
+        </member>
+        <member name="F:KnowledgeMap.Business.Abstracts.Fakes.StubIHomeServices.AddReferenceInt64Reference">
+            <summary>Sets the stub of IHomeServices.AddReference(Int64 topicId, Reference newReference)</summary>
+        </member>
+        <member name="F:KnowledgeMap.Business.Abstracts.Fakes.StubIHomeServices.AddTopicInt64TopicIEnumerableOfInt64">
+            <summary>Sets the stub of IHomeServices.AddTopic(Int64 ownerId, Topic newTopic, IEnumerable`1&lt;Int64&gt; referencesId)</summary>
+        </member>
+        <member name="F:KnowledgeMap.Business.Abstracts.Fakes.StubIHomeServices.ChangeReferenceOwnerInt64Int64Int64">
+            <summary>Sets the stub of IHomeServices.ChangeReferenceOwner(Int64 currentOwnerId, Int64 refId, Int64 nextOwnerId)</summary>
+        </member>
+        <member name="F:KnowledgeMap.Business.Abstracts.Fakes.StubIHomeServices.GetReferencesFromInt64">
+            <summary>Sets the stub of IHomeServices.GetReferencesFrom(Int64 topicId)</summary>
+        </member>
+        <member name="F:KnowledgeMap.Business.Abstracts.Fakes.StubIHomeServices.GetTopicInt64">
+            <summary>Sets the stub of IHomeServices.GetTopic(Int64 id)</summary>
+        </member>
+        <member name="F:KnowledgeMap.Business.Abstracts.Fakes.StubIHomeServices.IsUniverseTopicInt64">
+            <summary>Sets the stub of IHomeServices.IsUniverseTopic(Int64 id)</summary>
+        </member>
+        <member name="M:KnowledgeMap.Business.Abstracts.Fakes.StubIHomeServices.kmba::KnowledgeMap#Business#Abstracts#IHomeServices#AddReference(System.Int64,KnowledgeMap.Data.Models.Reference)">
+            <summary>Sets the stub of IHomeServices.AddReference(Int64 topicId, Reference newReference)</summary>
+        </member>
+        <member name="M:KnowledgeMap.Business.Abstracts.Fakes.StubIHomeServices.kmba::KnowledgeMap#Business#Abstracts#IHomeServices#AddTopic(System.Int64,KnowledgeMap.Data.Models.Topic,System.Collections.Generic.IEnumerable{System.Int64})">
+            <summary>Sets the stub of IHomeServices.AddTopic(Int64 ownerId, Topic newTopic, IEnumerable`1&lt;Int64&gt; referencesId)</summary>
+        </member>
+        <member name="M:KnowledgeMap.Business.Abstracts.Fakes.StubIHomeServices.kmba::KnowledgeMap#Business#Abstracts#IHomeServices#ChangeReferenceOwner(System.Int64,System.Int64,System.Int64)">
+            <summary>Sets the stub of IHomeServices.ChangeReferenceOwner(Int64 currentOwnerId, Int64 refId, Int64 nextOwnerId)</summary>
+        </member>
+        <member name="M:KnowledgeMap.Business.Abstracts.Fakes.StubIHomeServices.kmba::KnowledgeMap#Business#Abstracts#IHomeServices#GetReferencesFrom(System.Int64)">
+            <summary>Sets the stub of IHomeServices.GetReferencesFrom(Int64 topicId)</summary>
+        </member>
+        <member name="M:KnowledgeMap.Business.Abstracts.Fakes.StubIHomeServices.kmba::KnowledgeMap#Business#Abstracts#IHomeServices#GetTopic(System.Int64)">
+            <summary>Sets the stub of IHomeServices.GetTopic(Int64 id)</summary>
+        </member>
+        <member name="M:KnowledgeMap.Business.Abstracts.Fakes.StubIHomeServices.kmba::KnowledgeMap#Business#Abstracts#IHomeServices#IsUniverseTopic(System.Int64)">
+            <summary>Sets the stub of IHomeServices.IsUniverseTopic(Int64 id)</summary>
+        </member>
+        <member name="M:KnowledgeMap.Business.Abstracts.Fakes.StubIHomeServices.kmba::KnowledgeMap#Business#Abstracts#IHomeServices#RemoveReference(System.Int64)">
+            <summary>Sets the stub of IHomeServices.RemoveReference(Int64 id)</summary>
+        </member>
+        <member name="M:KnowledgeMap.Business.Abstracts.Fakes.StubIHomeServices.kmba::KnowledgeMap#Business#Abstracts#IHomeServices#RemoveTopic(System.Int64,System.Boolean,System.Boolean)">
+            <summary>Sets the stub of IHomeServices.RemoveTopic(Int64 id, Boolean keepSubtopics, Boolean keepReferences)</summary>
+        </member>
+        <member name="F:KnowledgeMap.Business.Abstracts.Fakes.StubIHomeServices.RemoveReferenceInt64">
+            <summary>Sets the stub of IHomeServices.RemoveReference(Int64 id)</summary>
+        </member>
+        <member name="F:KnowledgeMap.Business.Abstracts.Fakes.StubIHomeServices.RemoveTopicInt64BooleanBoolean">
+            <summary>Sets the stub of IHomeServices.RemoveTopic(Int64 id, Boolean keepSubtopics, Boolean keepReferences)</summary>
+        </member>
+    </members>
+</doc>

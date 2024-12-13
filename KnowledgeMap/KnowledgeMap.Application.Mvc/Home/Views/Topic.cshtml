@@ -1,0 +1,55 @@
+﻿@model TopicViewModel
+@{
+    ViewBag.Title = Model.Name;
+    ViewBag.Description = Model.Description;
+
+    var bodyId = "topicViewBody";
+    var collapseIconClass = "collapseIcon";
+    
+    var removeModalId = "topicRemovalConfirmationModal";
+    var removeBtnClass = "topicRemoveBtn";
+
+    var extraData = new ViewDataDictionary();
+}
+
+@section Bundles
+{
+    @Styles.Render(BundleRegistrar.CssTopicPath)
+    @Scripts.Render(BundleRegistrar.JsTopicPath)
+}
+
+@section Body
+{
+    <div class="container" id="@bodyId">
+        <h1 class="h1">
+            @Model.Name
+            @{
+                var result = Html.Action("IsUniverseTopic", new { topicId = Model.Id });
+                var isUniverse = bool.Parse(result.ToHtmlString());
+            }
+            @if (!isUniverse)
+            {
+                <a class="@removeBtnClass pull-right btn btn-warning badge" role="button" data-topicid="@Model.Id" data-toggle="modal" href="#@removeModalId">
+                    <span class="glyphicon glyphicon-remove" />
+                </a>
+            }
+        </h1>
+
+        <p>@Model.Description</p>
+
+        <hr />
+        @{
+            extraData.Clear();
+            extraData.Add("collapseIconClass", collapseIconClass);
+            extraData.Add("removeModalId", removeModalId);
+            extraData.Add("removeBtnClass", removeBtnClass);
+        }
+        @Html.Partial("Topic_Subtopics", Model, extraData)
+        <hr />
+        @{
+            extraData.Clear();
+            extraData.Add("collapseIconClass", collapseIconClass);
+        }
+        @Html.Partial("Topic_References", Model, extraData)
+    </div>
+}

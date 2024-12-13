@@ -1,0 +1,64 @@
+﻿@model TopicViewModel
+@{
+    var collapseIconClass = ViewData.First(k => k.Key == "collapseIconClass").Value;
+
+    var referencesDivId = "references";
+    var removeBtnClass = "refRemoveBtn";
+    var removeModalId = "refRemovalConfirmationModal";
+    var newModalId = "refNewCreationModal";
+
+    var extraData = new ViewDataDictionary();
+}
+
+<h2 class="h2">
+    References
+    <a class="small" role="button" data-toggle="collapse" href="#@referencesDivId">
+        <span class="@collapseIconClass glyphicon glyphicon-collapse-down" />
+    </a>
+    <a class="pull-right" role="button" data-toggle="modal" href="#@newModalId">
+        <span class="glyphicon glyphicon-plus-sign" />
+    </a>
+</h2>
+<div class="container">
+    <div class="collapse in" id="@referencesDivId">
+        @if (Model.References.Count > 0)
+        {
+            <table class="list-group">
+                @foreach (var reference in Model.References)
+                {
+                    <tr>
+                        <td class="list-group-content-cell">
+                            <a href="@reference.TargetUrl" class="list-group-item" target="_blank">
+                                <h4 class="list-group-item-heading">@reference.Name</h4>
+                                <p class="list-group-item-text">@reference.Description</p>
+                            </a>
+                        </td>
+                        <td>
+                            <button class="@removeBtnClass btn btn-warning" data-referenceid="@reference.Id" data-toggle="modal" data-target="#@removeModalId">
+                                <span class="glyphicon glyphicon-remove" />
+                            </button>
+                        </td>
+                    </tr>
+                }
+            </table>
+        }
+        else
+        {
+            <p class="alert alert-info">No references yet... add one now!!!</p>
+        }
+    </div>
+</div>
+
+@{
+    extraData.Clear();
+    extraData.Add("id", removeModalId);
+}
+@Html.DeferPartialViewRender("Topic_References_ModalRemove", viewData: extraData)
+
+@{
+    extraData.Clear();
+    extraData = new ViewDataDictionary();
+    extraData.Add("modalId", newModalId);
+    extraData.Add("ownerId", Model.Id);
+}
+@Html.DeferPartialViewRender("Topic_References_ModalNew", new TopicReferenceViewModel(), extraData)

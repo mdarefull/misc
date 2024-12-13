@@ -1,0 +1,55 @@
+﻿@model TopicViewModel
+@{
+    var collapseIconClass = ViewData.First(k => k.Key == "collapseIconClass").Value;
+    var removeModalId = ViewData.First(k => k.Key == "removeModalId").Value;
+    var removeBtnClass = ViewData.First(k => k.Key == "removeBtnClass").Value;
+
+    var subtopicsDivId = "subtopics";
+    var extraData = new ViewDataDictionary();
+}
+
+<h2 class="h2">
+    SubTopics
+    <a class="small" role="button" data-toggle="collapse" href="#@subtopicsDivId">
+        <span class="@collapseIconClass glyphicon glyphicon-collapse-down" />
+    </a>
+    <a class="pull-right" role="button" href="@Url.Action("AddTopic", new { ownerId = Model.Id })">
+        <span class="glyphicon glyphicon-plus-sign" />
+    </a>
+</h2>
+<div class="container">
+    <div class="collapse in" id="@subtopicsDivId">
+        @if (Model.SubTopics.Count() > 0)
+        {
+            <table class="list-group">
+                @foreach (var subtopic in Model.SubTopics)
+                {
+                    <tr>
+                        <td class="list-group-content-cell">
+                            <a href="@Url.Action("Topic", new { topicName = subtopic.Name, topicId = subtopic.Id })" class="list-group-item">
+                                <h4 class="list-group-item-heading">@subtopic.Name</h4>
+                                <p class="list-group-item-text">@subtopic.Description</p>
+                            </a>
+                        </td>
+                        <td>
+                            <button class="@removeBtnClass btn btn-warning" data-topicid="@subtopic.Id" data-toggle="modal" data-target="#@removeModalId">
+                                <span class="glyphicon glyphicon-remove" />
+                            </button>
+                        </td>
+                    </tr>
+                }
+            </table>
+        }
+        else
+        {
+            <p class="alert alert-info">No subtopics yet... gather common references on a new subtopic now!!!</p>
+        }
+    </div>
+</div>
+
+
+@{
+    extraData.Clear();
+    extraData.Add("id", removeModalId);
+}
+@Html.DeferPartialViewRender("Topic_Subtopics_ModalRemove", viewData: extraData)

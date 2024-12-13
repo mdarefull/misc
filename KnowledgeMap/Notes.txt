@@ -1,0 +1,14 @@
+// To include bellow each view to properly enable intelli-sense.
+@if (false)
+{
+    <script src="~/Shared/Content/Scripts/jquery-3.1.1.js"></script>
+    <script src="~/Shared/Content/Scripts/bootstrap.js"></script>
+    <script src="~/Shared/Content/Scripts/jquery.validate.js"></script>
+    <script src="~/Shared/Content/Scripts/jquery.validate.unobtrusive.js"></script>
+    <link href="~/Shared/Content/Styles/bootstrap.css" rel="stylesheet" />
+    <link href="~/Shared/Content/Styles/bootstrap-theme.css" rel="stylesheet" />
+}
+
+
+My naming rules to content files:
+<targetViewName>-<useCase>.css / js

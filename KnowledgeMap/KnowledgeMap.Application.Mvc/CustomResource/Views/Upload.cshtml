@@ -1,0 +1,54 @@
+﻿@model UploadCustomResourceViewModel
+@{
+    ViewBag.Title = "Upload a Custom Resource";
+    ViewBag.Description = "Upload a new custom resource for further reference.";
+}
+
+@section Body
+{
+    <div class="container">
+        <div class="panel panel-success">
+            <div class="panel-heading">
+                <h1 class="panel-title">Upload a Custom Resource</h1>
+            </div>
+            @using (Html.BeginForm("Upload", "CustomResource", FormMethod.Post, new { enctype = "multipart/form-data" }))
+            {
+                <div class="panel-body">
+                    <div class="form-horizontal">
+                        @Html.ValidationSummary(true)
+
+                        <div class="form-group">
+                            @Html.LabelFor(m => m.Name, new { @class = "col-xs-2 control-label" })
+                            <div class="col-xs-10">
+                                @Html.TextBoxFor(m => m.Name, new { @class = "form-control", placeholder = "Name..." })
+                            </div>
+                            <div class="col-xs-offset-2 col-xs-10">
+                                @Html.ValidationMessageFor(m => m.Name)
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            @Html.LabelFor(m => m.File, new { @class = "col-xs-2 control-label" })
+                            <div class="col-xs-10">
+                                <input type="file" name="File" class="form-control"/>
+                            </div>
+                            <div class="col-xs-offset-2 col-xs-10">
+                                @Html.ValidationMessageFor(m => m.File)
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-footer">
+                    <div class="row">
+                        <div class="col-xs-6">
+                            <button class="btn btn-success btn-block" type="submit">Accept</button>
+                        </div>
+                        <div class="col-xs-6">
+                            <a role="button" class="btn btn-default btn-block" href="@Url.Action("List")">Cancel</a>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+}

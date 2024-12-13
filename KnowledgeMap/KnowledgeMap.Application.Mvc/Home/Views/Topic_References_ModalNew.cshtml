@@ -1,0 +1,59 @@
+﻿@model TopicReferenceViewModel
+@{
+    var ownerId = ViewData.First(k => k.Key == "ownerId").Value;
+    var newModalId = ViewData.First(k => k.Key == "modalId").Value;
+    
+    var cancelButtonId = "addCancelButton";
+}
+
+<div class="modal fade" id="@newModalId" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            @using (Html.BeginForm("AddReference", "Home"))
+            {
+                <div class="modal-header">
+                    <h4 class="modal-title">Add a new Reference</h4>
+                </div>
+                <div class="modal-body">
+                    <p class="tooltip">
+                        @Html.ValidationSummary()
+                    </p>
+                    <div class="form-horizontal">
+                        @Html.Hidden("topicId", ownerId)
+                        @Html.HiddenFor(m => Model.Id)
+                        <div class="form-group">
+                            @Html.LabelFor(m => Model.Name, new { @class = "control-label col-sm-2" })
+                            <div class="col-sm-10">
+                                @Html.TextBoxFor(m => Model.Name, new { @class = "form-control", placeholder = "Name..." })
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            @Html.LabelFor(m => Model.TargetUrl, new { @class = "control-label col-sm-2" })
+                            <div class="col-sm-10">
+                                @* TODO [FIX] jquery.validate doesn't recognize paths, uris or host=localhost as valid Urls.*@
+                                @Html.TextBoxFor(m => Model.TargetUrl,
+                                    new
+                                    {
+                                        @class = "form-control",
+                                        placeholder = "http://www.somewebsite.com/somePath?some=query",
+                                    })
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            @Html.LabelFor(m => Model.Description, new { @class = "control-label col-sm-1" })
+                            <div class="col-sm-push-11">
+                                <div class="col-sm-12">
+                                    @Html.TextAreaFor(m => Model.Description, new { @class = "form-control", placeholder = "Optional Description...", rows = 3 })
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-success">Save Changes</button>
+                    <button id="@cancelButtonId" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                </div>
+            }
+        </div>
+    </div>
+</div>

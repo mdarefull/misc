@@ -1,0 +1,44 @@
+Título: Burocratismo
+Idioma: Español
+Restricciones:
+	Tiempo Límite: 1s
+	Memoria Límite: 128MB
+Autor: mdarefull
+
+Descripción:
+Los ciudadanos de la localidad de "Charrapukta" están demandando por la imposición de un nuevo sistema de control. 
+Exclaman que la realización de tanto sus trámites personales como profesionales son en exceso complicados, incurriendo en una inversión extremadamente costosa 
+de tiempo y recursos materiales.
+
+La gobernatura de la localidad ha decidido realizar una inversión millonaria en la automatización de todo el proceso de gestión social.
+Después de concluido el período contratado el software implementado para realizar este trabajo se encuentra en pésimas condiciones y la gobernatura solicita su 
+ayuda para optimizarlo hasta el punto requerido.
+
+
+Formato de entrada:
+La primera línea de la entrada está compuesta por un número n (n \in Z+, n <= 1E^6).
+La segunda línea posee una lista de números enteros diferentes n_i (n_i < 1E9, 1<=i<=n), ordenada de forma ascendente.
+Las próximas 2n líneas contendrán consultas de la forma:
+E k | C k
+Donde "E k" significa eliminar el elemento k de la Base de Datos y "C k" es una consulta para saber si el elemento k se encuentra actualmente en la Base de Datos.
+
+
+Formato de salida:
+Una línea conteniendo la palabra "True" o "False" (sin las comillas) por cada consulta de la forma "C k", en dependencia de si k se encuentra en la Base de Datos o no.
+
+
+Ejemplo:
+Entrada:
+3
+1 2 3
+C 3
+E 3
+C 3
+E 2
+E 1
+C 3
+
+Salida:
+True
+False
+False

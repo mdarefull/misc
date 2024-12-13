@@ -1,0 +1,3 @@
+Ejercicio de búsqueda simple en un array ordenado bastante grande.
+ -> Varios casos de prueba (si |arr| = n => n casos de prueba)   (Obligar a búsqueda binaria)
+ -> Hacer un n tan grande como para que minBound + maxBound se vaya de rango ---->>>   (pero entonces van a hacer índices long long)
